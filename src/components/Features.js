@@ -1,11 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
+
+
+const Wrapper = styled.section`
+  background-color: palevioletred;
+  padding: 1em;
+`
+
+const Section = styled.section`
+
+`
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <div>
     {gridItems.map(item => (
-      <div key={item.image} className="column is-6">
-        <section className="section">
-          <p className="has-text-centered">
+      <div key={item.image}>
+        <section>
+          <p>
             <img alt="" src={item.image} />
           </p>
           <p>{item.text}</p>
