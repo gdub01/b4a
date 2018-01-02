@@ -5,20 +5,8 @@ import Features from 'site/components/Features'
 import Testimonials from 'site/components/Testimonials'
 import Pricing from 'site/components/Pricing'
 
-import { AboutPageTemplate } from 'site/templates/about-page';
 import { ProductPageTemplate } from 'site/templates/product-page';
-import { BlogPostTemplate } from 'site/templates/blog-post';
 
-const AboutPagePreview = ({ entry, widgetFor }) =>
-  <AboutPageTemplate title={entry.getIn(['data', 'title'])} content={widgetFor('body')} />;
-
-const BlogPostPreview = ({ entry, widgetFor }) => (
-  <BlogPostTemplate
-    content={widgetFor('body')}
-    description={entry.getIn(['data', 'description'])}
-    title={entry.getIn(['data', 'title'])}
-  />
-)
 
 const ProductPagePreview = ({ entry, widgetFor, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs'])
@@ -64,6 +52,4 @@ const ProductPagePreview = ({ entry, widgetFor, getAsset }) => {
 }
 
 CMS.registerPreviewStyle('/styles.css')
-CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
