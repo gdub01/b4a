@@ -65,6 +65,10 @@ const CTA = styled.h1`
   margin-bottom: .25em;
 `;
 
+const Phone = styled.a`
+  color: #444;
+`;
+
 const Wrapper = styled.div`
   background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -72,6 +76,23 @@ const Wrapper = styled.div`
   border-radius: 20px;
 `;
 
+const HR = styled.hr`
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+`
+const Call = styled.h2`
+  font-size: 1.4em;
+  margin-bottom: .75em;
+  margin-top: 1.25em;
+`;
+const Or = styled.h1`
+  font-size: 2em;
+  margin-bottom: .25em;
+  margin-top: .25em;
+  color: #666;
+  text-align: center;
+`;
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -99,6 +120,9 @@ export default class Contact extends React.Component {
     return (
       <Wrapper>
         <CTA>Give us a try!</CTA>
+        <HR />
+        <Call>Phone: <Phone href="tel:941-465-5034">941-465-5034</Phone></Call>
+        <Or>- OR -</Or>
         <Form
           name="contact"
           method="post"

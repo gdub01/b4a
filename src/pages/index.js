@@ -113,7 +113,7 @@ const ServicesTitle = styled.h1`
   font-size: 3.4em;
   color: white;
   line-height: 1em;
-  margin-bottom: 1em;
+  margin-bottom: .4em;
 `
 const ServicesSubTitle = styled.h3`
   font-size: 1.5em;
