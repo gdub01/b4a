@@ -112,13 +112,13 @@ const ServiceHeader = styled.div`
 const ServicesTitle = styled.h1`
   font-size: 3.4em;
   color: white;
-  line-height: 1.5em;
+  line-height: 1em;
   margin-bottom: 1em;
 `
 const ServicesSubTitle = styled.h3`
   font-size: 1.5em;
   color: white;
-  line-height: 1em;
+  line-height: 1.2em;
 `
 const Services = styled.div`
   display: flex;
@@ -173,6 +173,7 @@ const HR = styled.hr`
 
 const SecondFormHolder = styled.div`
   width: 400px;
+  max-width: 100%;
 `
 
 const LandingPage = ({
@@ -184,6 +185,7 @@ const LandingPage = ({
     align-items: center;
     min-height: 98vh;
     padding: 1em;
+    padding-top: 2em;
     background-image: linear-gradient(rgba(219, 112, 147, 0.6), rgba(0, 0, 0, 0.6)),
           url('${fullImage}');
   `;
