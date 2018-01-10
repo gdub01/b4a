@@ -258,7 +258,7 @@ const LandingPage = ({
               <Service>
                 <ServiceTitle>Standard House Cleaning</ServiceTitle>
                 <HR />
-                <ServiceDescription>Thorough house cleaning - 30/hr <br /> With our supplies - 35/hr<br /> 3 hour minimum</ServiceDescription>
+                <ServiceDescription>Thorough house cleaning<br /> 3 hour minimum</ServiceDescription>
               </Service>
               <Service>
                 <ServiceTitle>Deep Clean</ServiceTitle>
@@ -268,7 +268,7 @@ const LandingPage = ({
               <Service>
                 <ServiceTitle>Move-in/out</ServiceTitle>
                 <HR />
-                <ServiceDescription>Clean house prior to move-in or after move-out<br /> Starting at $40/hr. <br /> 3 hour minimum</ServiceDescription>
+                <ServiceDescription>Clean house prior to move-in or after move-out <br /> 3 hour minimum</ServiceDescription>
               </Service>
               <Service>
                 <ServiceTitle>Windows</ServiceTitle>
@@ -278,7 +278,7 @@ const LandingPage = ({
               <Service>
                 <ServiceTitle>New Construction</ServiceTitle>
                 <HR />
-                <ServiceDescription>Clean after new home construction<br /> Starting at 40/hr <br /> 3 hour minimum</ServiceDescription>
+                <ServiceDescription>Clean after new home construction <br /> 3 hour minimum</ServiceDescription>
               </Service>
               <Service>
                 <ServiceTitle>Commercial Office Space</ServiceTitle>
