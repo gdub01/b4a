@@ -121,6 +121,8 @@ export default class Contact extends React.Component {
       <Wrapper>
         <CTA>Give us a try!</CTA>
         <HR />
+        <Call>Phone: <Phone href="tel:941-357-3559">941-357-3559</Phone></Call>
+        <Or>- OR -</Or>
         <Form
           name="contact"
           method="post"
