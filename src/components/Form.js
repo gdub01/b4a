@@ -136,6 +136,7 @@ export default class Contact extends React.Component {
               Don’t fill this out: <Input name="bot-field" />
             </label>
           </p>
+      
           <FormControl>
             <Label>Name:</Label>
             <Input type="text" name="name" onChange={this.handleChange} placeholder="name"/>
@@ -152,6 +153,7 @@ export default class Contact extends React.Component {
             <Label>Message:</Label>
             <TextArea name="message" onChange={this.handleChange}/>
           </FormControl>
+          <div data-netlify-recaptcha></div>
           <FormControl>
             <Button type="submit">Get Started</Button>
           </FormControl>
